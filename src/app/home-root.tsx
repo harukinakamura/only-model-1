@@ -37,16 +37,21 @@ export function HomeRoot({ pageType = "home", initialSection }: HomeRootProps) {
       <main className="relative z-10 flex flex-col">
         {pageType === "home" && (
           <>
-            <HeroSection />
-            <FeaturedSection />
-            <TopCreatorsSection />
-            <WhyOnlyModelsSection />
-            <TransparencySection />
-            <ServicesDetail />
-            <ComprehensiveGrowth />
-            <FeaturesSection />
-            <TestimonialsSection />
-            <CallToActionSection />
+        <HeroSection />
+        <FeaturedSection />
+        <TopCreatorsSection />
+        <WhyOnlyModelsSection />
+        <TransparencySection />
+        <ServicesDetail />
+        {/* <DoneForYouSection /> */}
+        <ComprehensiveGrowth />
+        <FeaturesSection />
+        <WorkflowSection />
+        <RealStrugglesSection />
+        <StepsToStartSection />
+        <FAQSection />
+        <TestimonialsSection />
+        <CallToActionSection />
           </>
         )}
 
