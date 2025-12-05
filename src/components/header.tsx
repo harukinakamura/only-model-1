@@ -9,7 +9,8 @@ import { ReferButton } from "@/components/refer-button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "How We work", href: "/" },
+  { label: "Home", href: "/" },
+  {label: "How We work", href: "/how-we-work"},
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/about" },
   { label: "Contact us", href: "/contact" },

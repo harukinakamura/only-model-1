@@ -38,6 +38,13 @@ export function HomeRoot({ pageType = "home" }: HomeRootProps) {
             <HeroSection />
             <FeaturedSection />
             <TopCreatorsSection />
+            
+          </>
+        )}
+
+        {pageType === "how-we-work" && (
+          <>
+            <WorkflowSection />
             <StepsToStartSection/>
           </>
         )}
@@ -49,7 +56,7 @@ export function HomeRoot({ pageType = "home" }: HomeRootProps) {
             <ServicesDetail />
             <ComprehensiveGrowth />
             <FeaturesSection />
-            <WorkflowSection />
+            {/* <WorkflowSection /> */}
             <RealStrugglesSection />
             <FAQSection />
           </>
