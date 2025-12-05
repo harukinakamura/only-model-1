@@ -40,7 +40,7 @@ export function HeroSection() {
 
       <div className="nav-shell relative z-10 mt-10 flex flex-col items-center gap-12 md:mt-28 md:gap-12 px-6 text-center md:flex-col md:text-center xl:mt-0 xl:flex-row xl:gap-28 xl:text-left">
         <motion.div
-          initial={{ opacity: 0, x: -50, filter: "blur(10px)" }}
+          initial={typeof window === 'undefined' ? false : { opacity: 0, x: -50, filter: "blur(10px)" }} // Apply initial only on client
           animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-1 flex-col items-center gap-6 md:items-center xl:items-start"
