@@ -286,7 +286,7 @@ export function ComprehensiveGrowth() {
                             </div>
 
                             {/* Content Side */}
-                            <div className="flex-1 space-y-8 text-center lg:text-left">
+                            <div className="flex-1 space-y-8 text-center lg:text-left max-[1200px]:p-[10%]">
                                 <div className="flex flex-col items-center space-y-4 lg:items-start">
                                     {/* <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-accent">
                                         Growth Pillar {index + 1}
@@ -331,7 +331,7 @@ export function ComprehensiveGrowth() {
                                         </motion.h3>
                                     </motion.div>
                                 </div>
-                                <div className=" space-y-3 text-lg leading-relaxed text-muted-foreground">
+                                <div className=" space-y-3 text-lg leading-relaxed text-muted-foreground text-left max-[1200px]:p-[10%]  max-[500px]:p-[5%]">
                                     {feature.content.map((paragraph, i) => (
                                         <p key={i}>{paragraph}</p>
                                     ))}

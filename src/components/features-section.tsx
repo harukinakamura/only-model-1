@@ -259,7 +259,7 @@ export function FeaturesSection() {
 
               <div className="relative z-10 space-y-2" style={{ transform: "translateZ(20px)" }}>
                 <h3 className="text-2xl font-semibold">{feature.title}</h3>
-                <p className="text-sm leading-relaxed text-muted">{feature.description}</p>
+                <p className="text-sm leading-relaxed text-muted text-left">{feature.description}</p>
               </div>
 
               {/* Animated Graph Container */}

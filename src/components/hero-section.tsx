@@ -21,7 +21,7 @@ export function HeroSection() {
       </div>
       <div className="pointer-events-none relative z-10 flex w-full justify-center mb-8 md:absolute md:top-24 md:mb-0">
         <motion.div
-          initial={{ opacity: 0, scale: 0.85 }}
+          initial={typeof window === 'undefined' ? false : { opacity: 0, scale: 0.85 }} // Apply initial only on client
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           className="relative flex items-center justify-center"
@@ -46,7 +46,7 @@ export function HeroSection() {
           className="flex flex-1 flex-col items-center gap-6 md:items-center xl:items-start"
         >
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={typeof window === 'undefined' ? false : { opacity: 0, y: 20 }} // Apply initial only on client
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             className="glass-pill px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-accent-secondary shadow-[0_0_20px_rgba(255,20,147,0.3)]"
@@ -75,7 +75,7 @@ export function HeroSection() {
           </p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={typeof window === 'undefined' ? false : { opacity: 0, y: 20 }} // Apply initial only on client
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
             className="mt-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-center xl:justify-start xl:items-start"
@@ -85,7 +85,7 @@ export function HeroSection() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.8, rotate: 5 }}
+          initial={typeof window === 'undefined' ? false : { opacity: 0, scale: 0.8, rotate: 5 }} // Apply initial only on client
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 1, ease: "easeOut", type: "spring", bounce: 0.4 }}
           className="relative flex-1 flex justify-center w-full md:justify-center md:mt-8 xl:mt-0 xl:justify-end md:ml-0 xl:-ml-8 2xl:ml-0"
