@@ -150,14 +150,14 @@ export function WorkflowSection() {
           </p>
         </motion.div>
         
-        <motion.div // Wrap StartJourneyButton in motion.div
+        {/* <motion.div // Wrap StartJourneyButton in motion.div
           initial={typeof window === 'undefined' ? false : { opacity: 0, y: 20 }} // Apply hydration fix
           animate={isInView ? { opacity: 1, y: 0 } : {}} // Animate with isInView
           transition={{ duration: 0.6, delay: 0.7 }} // Add transition
           className="flex justify-center my-10"
         >
           <StartJourneyButton />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           ref={containerRef}
@@ -316,6 +316,9 @@ export function WorkflowSection() {
             </motion.div>
           </div>
         </motion.div>
+        <div className="flex justify-center my-10">
+          <StartJourneyButton />
+        </div>
       </div>
     </section>
   );
