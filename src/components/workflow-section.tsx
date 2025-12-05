@@ -148,10 +148,10 @@ export function WorkflowSection() {
           <p className="mx-auto max-w-3xl text-lg text-muted">
             Strategy, chat, creative, compliance, and growth systems built exclusively for OnlyFans elites.
           </p>
-          <div className="flex justify-center mt-10">
+        </motion.div>
+          <div className="flex justify-center my-10">
             <StartJourneyButton />
           </div>
-        </motion.div>
 
         <motion.div
           ref={containerRef}
