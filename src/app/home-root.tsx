@@ -49,7 +49,8 @@ export function HomeRoot({ pageType = "home", initialSection }: HomeRootProps) {
         <WorkflowSection />
         <RealStrugglesSection />
         {/* <StepsToStartSection /> */}
-        <FAQSection />
+        {/* <FAQSection /> */}
+        
         <TestimonialsSection />
         <CallToActionSection />
           </>
