@@ -9,11 +9,11 @@ import { ReferButton } from "@/components/refer-button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "/" },
   { label: "How We Work", href: "/how-we-work" },
-  { label: "Blog", href: "/blog" },
-  { label: "FAQ", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Referral", href: "/referral" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Blog", href: "/#testimonials" },
+  { label: "Contact", href: "/#cta" },
 ];
 
 export function Header() {
@@ -84,6 +84,7 @@ export function Header() {
       <div className="nav-shell pointer-events-auto flex items-center gap-3 w-full max-w-[1350px] justify-between">
         <div className="relative z-50 shrink-0 transition-transform duration-300 hover:scale-105">
           <div className="pointer-events-none absolute inset-0 -z-10 scale-[1.8] rounded-full bg-accent/40 blur-[100px]" />
+          <Link href="/#home">
           <Image
             src="/assets/logos/logo.png"
             alt="OnlyModels logo"
@@ -92,6 +93,7 @@ export function Header() {
             className="h-20 w-20 object-contain drop-shadow-[0_5px_35px_rgba(255,20,147,0.85)]"
             priority
           />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
