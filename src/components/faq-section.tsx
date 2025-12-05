@@ -100,8 +100,8 @@ export function FAQSection() {
       <div className="pointer-events-none absolute inset-0  via-background to-background opacity-90" />
       <div className="relative mx-auto flex max-w-6xl flex-col gap-8 md:gap-16"> {/* Adjusted gap for responsiveness */}
         <motion.div
-          initial={false} // Changed to false
-          animate={sectionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} // Conditionally animate to hidden if not in view
+          initial={false} // Set initial to false to prevent hiding on SSR
+          whileInView={{ opacity: 1, y: 0 }} // Animate when in view
           transition={{ duration: 0.65 }}
           className="mx-auto w-full max-w-3xl text-center"
         >
@@ -136,22 +136,20 @@ export function FAQSection() {
           {faqs.map((faq, index) => (
             <motion.div
               key={faq.question}
-              initial={false} // Changed to false
-              animate={
-                listInView
-                  ? {
-                    opacity: 1,
-                    rotateX: 0,
-                    y: 0,
-                    transition: {
-                      delay: 0.1 * index,
-                      duration: 0.6,
-                      type: "spring",
-                      stiffness: 120,
-                      damping: 15
-                    }
+              initial={false} // Set initial to false to prevent hiding on SSR
+              whileInView={
+                {
+                  opacity: 1,
+                  rotateX: 0,
+                  y: 0,
+                  transition: {
+                    delay: 0.1 * index,
+                    duration: 0.6,
+                    type: "spring",
+                    stiffness: 120,
+                    damping: 15
                   }
-                  : { opacity: 0, rotateX: -30, y: 40 } // Conditionally animate to hidden if not in view
+                }
               }
               style={{ transformOrigin: "top center", perspective: "1000px" }}
               className="faq-item rounded-[28px] border border-white/10 bg-gradient-to-r from-background/60 via-background/40 to-background/60 p-1 shadow-lg shadow-black/10 backdrop-blur-md"
