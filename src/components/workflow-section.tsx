@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform, useInView } from "framer-motion";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import StartJourneyButton from "./ui/start-journey-button";
 
 export function WorkflowSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -147,6 +148,9 @@ export function WorkflowSection() {
           <p className="mx-auto max-w-3xl text-lg text-muted">
             Strategy, chat, creative, compliance, and growth systems built exclusively for OnlyFans elites.
           </p>
+          <div className="flex justify-center mt-10">
+            <StartJourneyButton />
+          </div>
         </motion.div>
 
         <motion.div
