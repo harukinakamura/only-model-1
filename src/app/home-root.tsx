@@ -18,7 +18,7 @@ import { WhyOnlyModelsSection } from "@/components/why-onlymodels-section";
 import { WorkflowSection } from "@/components/workflow-section";
 import { ReferralSection } from "@/components/referral";
 
-export type PageType = "home" | "referral"| "how-we-work";
+export type PageType = "home" | "referral"| "how-we-work" |"faq";
 
 export type HomeRootProps = {
   pageType?: PageType;
@@ -45,7 +45,6 @@ export function HomeRoot({ pageType = "home", initialSection }: HomeRootProps) {
             <ServicesDetail />
             <ComprehensiveGrowth />
             <FeaturesSection />
-            <FAQSection />
             <TestimonialsSection />
             <CallToActionSection />
           </>
@@ -55,6 +54,12 @@ export function HomeRoot({ pageType = "home", initialSection }: HomeRootProps) {
           <>
             <WorkflowSection />
             <StepsToStartSection />
+          </>
+        )}
+
+        {pageType === "faq" && (
+          <>
+            <FAQSection />
           </>
         )}
 

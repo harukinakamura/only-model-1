@@ -11,7 +11,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "How We Work", href: "/how-we-work" },
   { label: "Referral", href: "/referral" },
-  { label: "FAQ", href: "/#faq" },
+  { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/#testimonials" },
   { label: "Contact us", href: "/#cta" },
 ];

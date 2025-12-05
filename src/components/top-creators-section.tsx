@@ -205,7 +205,6 @@ export function TopCreatorsSection() {
                                     From Nov 2024 to Nov 2025
                                 </div>
                             </div>
-                            
 
                             <div className="space-y-4">
                                 {creatorMetrics.map((metric) => (
