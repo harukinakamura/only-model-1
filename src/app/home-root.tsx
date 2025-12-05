@@ -17,7 +17,7 @@ import { TransparencySection } from "@/components/transparency-section";
 import { WhyOnlyModelsSection } from "@/components/why-onlymodels-section";
 import { WorkflowSection } from "@/components/workflow-section";
 
-export type PageType = "home" | "about" | "blog" | "contact";
+export type PageType = "home" | "about" | "blog" | "contact" | "how-we-work";
 
 export type HomeRootProps = {
   pageType?: PageType;
@@ -45,7 +45,7 @@ export function HomeRoot({ pageType = "home" }: HomeRootProps) {
         {pageType === "how-we-work" && (
           <>
             <WorkflowSection />
-            <StepsToStartSection/>
+            <StepsToStartSection />
           </>
         )}
 
@@ -56,8 +56,6 @@ export function HomeRoot({ pageType = "home" }: HomeRootProps) {
             <ServicesDetail />
             <ComprehensiveGrowth />
             <FeaturesSection />
-            {/* <WorkflowSection /> */}
-            <RealStrugglesSection />
             <FAQSection />
           </>
         )}
