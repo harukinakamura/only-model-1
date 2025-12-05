@@ -13,7 +13,7 @@ const navLinks = [
   { label: "Referral", href: "/referral" },
   { label: "FAQ", href: "/#faq" },
   { label: "Blog", href: "/#testimonials" },
-  { label: "Contact", href: "/#cta" },
+  { label: "Contact us", href: "/#cta" },
 ];
 
 export function Header() {
