@@ -12,7 +12,7 @@ const navLinks = [
   { label: "How We Work", href: "/how-we-work" },
   { label: "Referral", href: "/referral" },
   { label: "FAQ", href: "/faq" },
-  { label: "Blog", href: "/#testimonials" },
+  // { label: "Blog", href: "/#testimonials" },
   { label: "Contact us", href: "/#cta" },
 ];
 
