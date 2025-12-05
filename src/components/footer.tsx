@@ -16,10 +16,10 @@ const XLogo = ({ className }: { className?: string }) => (
 );
 
 const footerLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "How We work", href: "/" },
+  { label: "FAQ", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact us", href: "/contact" },
 ];
 
 const contactInfo = [

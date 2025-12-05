@@ -38,6 +38,7 @@ export function HomeRoot({ pageType = "home" }: HomeRootProps) {
             <HeroSection />
             <FeaturedSection />
             <TopCreatorsSection />
+            <StepsToStartSection/>
           </>
         )}
 

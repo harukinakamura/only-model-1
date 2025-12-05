@@ -9,10 +9,10 @@ import { ReferButton } from "@/components/refer-button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "/" },
+  { label: "How We work", href: "/" },
   { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "FAQ", href: "/about" },
+  { label: "Contact us", href: "/contact" },
 ];
 
 export function Header() {
@@ -95,7 +95,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:justify-center">
-          <nav className="glass-pill glass-pill--menu">
+          <nav className="glass-pill glass-pill--menu" style={{gap:'2rem'}}>
             {navLinks.map((item) => (
               <Link key={item.href} href={item.href} className="nav-item">
                 {item.label}
