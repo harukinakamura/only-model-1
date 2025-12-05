@@ -131,6 +131,7 @@ function ChatInterface() {
                 </motion.div>
             </div>
         </div>
+
     );
 }
 
