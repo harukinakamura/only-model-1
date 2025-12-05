@@ -98,12 +98,12 @@ export function FAQSection() {
       ref={sectionRef}
     >
       <div className="pointer-events-none absolute inset-0  via-background to-background opacity-90" />
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-16">
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-8 md:gap-16"> {/* Adjusted gap for responsiveness */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={sectionInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.65 }}
-          className="mx-auto max-w-3xl text-center"
+          className="mx-auto w-full max-w-3xl text-center"
         >
           <div className="faq-pill inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-foreground/70">
             <Sparkles className="h-4 w-4 text-accent" />
