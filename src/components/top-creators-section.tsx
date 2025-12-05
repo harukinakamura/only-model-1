@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import StartJourneyButton from "./ui/start-journey-button";
 
 const creatorMetrics = [
     { label: "Subscriptions", value: "$52,341.88", accent: "bg-accent" },
@@ -97,6 +98,9 @@ export function TopCreatorsSection() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="h-1 w-32 rounded-full bg-gradient-to-r from-accent to-transparent mx-auto origin-center md:mx-0 md:origin-left"
                     />
+                    <div className="flex justify-center mt-4">
+                        <StartJourneyButton />
+                    </div>
                 </motion.div>
 
                 {/* Right Column: Card */}

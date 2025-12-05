@@ -2,6 +2,7 @@
 
 import { motion, type Variants, type Transition } from "framer-motion";
 import { Check, Lock, MessageCircle, ShieldCheck, TrendingUp, User } from "lucide-react";
+import StartJourneyButton from "./ui/start-journey-button";
 
 const services = [
     {
@@ -294,6 +295,9 @@ export function ServicesDetail() {
                                     {service.content.map((paragraph, i) => (
                                         <p key={i}>{paragraph}</p>
                                     ))}
+                                </div>
+                                <div className="flex justify-center mt-10">
+                                    <StartJourneyButton />
                                 </div>
                             </div>
                         </motion.div>

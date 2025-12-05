@@ -13,6 +13,7 @@ import {
     TrendingUp,
     Clock
 } from "lucide-react";
+import StartJourneyButton from "./ui/start-journey-button";
 
 const growthFeatures = [
     {
@@ -330,11 +331,15 @@ export function ComprehensiveGrowth() {
                                             </motion.span>
                                         </motion.h3>
                                     </motion.div>
+                                    
                                 </div>
                                 <div className=" space-y-3 text-lg leading-relaxed text-muted-foreground text-left max-[1200px]:p-[10%]  max-[500px]:p-[5%]">
                                     {feature.content.map((paragraph, i) => (
                                         <p key={i}>{paragraph}</p>
                                     ))}
+                                </div>
+                                <div className="flex justify-center mt-10">
+                                    <StartJourneyButton />
                                 </div>
                             </div>
                         </motion.div>

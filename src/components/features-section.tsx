@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import StartJourneyButton from "./ui/start-journey-button";
 
 type Feature = {
   title: string;
