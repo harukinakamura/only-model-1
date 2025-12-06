@@ -149,6 +149,15 @@ export function WorkflowSection() {
             Strategy, chat, creative, compliance, and growth systems built exclusively for OnlyFans elites.
           </p>
         </motion.div>
+        
+        {/* <motion.div // Wrap StartJourneyButton in motion.div
+          initial={typeof window === 'undefined' ? false : { opacity: 0, y: 20 }} // Apply hydration fix
+          animate={isInView ? { opacity: 1, y: 0 } : {}} // Animate with isInView
+          transition={{ duration: 0.6, delay: 0.7 }} // Add transition
+          className="flex justify-center my-10"
+        >
+          <StartJourneyButton />
+        </motion.div> */}
 
         <motion.div
           ref={containerRef}
