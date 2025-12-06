@@ -4,7 +4,8 @@ import path from "path";
 const nextConfig: NextConfig = {
   // Explicitly set the workspace root to prevent Next.js from inferring the wrong root
   // This fixes the "multiple lockfiles" warning and ensures correct build paths
-  outputFileTracingRoot: path.join(__dirname),
+  // Using process.cwd() which works in all environments (local, Vercel, etc.)
+  outputFileTracingRoot: path.resolve(process.cwd()),
   
   async headers() {
     return [
