@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform, useInView } from "framer-motion";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import StartJourneyButton from "./ui/start-journey-button";
 
 export function WorkflowSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -306,6 +307,9 @@ export function WorkflowSection() {
             </motion.div>
           </div>
         </motion.div>
+        <div className="flex justify-center mt-20">
+          <StartJourneyButton />
+        </div>
       </div>
     </section>
   );

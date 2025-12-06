@@ -338,7 +338,7 @@ export function ComprehensiveGrowth() {
                                         <p key={i}>{paragraph}</p>
                                     ))}
                                 </div>
-                                <div className="flex justify-center mt-10">
+                                <div className="flex justify-center my-10">
                                     <StartJourneyButton />
                                 </div>
                             </div>
